@@ -1,5 +1,5 @@
 <p align="center">
-	<img src="https://capsule-render.vercel.app/api?type=waving&height=300&color=gradient&text=Sqimp&reversal=false&section=header&textBg=false&animation=fadeIn&desc=QEMU%20GUI%20wrapper%20written%20with%20Go%20and%20Fyne&descAlign=50&descAlignY=55&fontAlignY=34">
+	<img src="https://capsule-render.vercel.app/api?type=waving&height=300&color=gradient&text=Sqimp&reversal=false&section=header&textBg=false&animation=fadeIn&desc=QEMU GUI wrapper written with Rust and Tauri&descAlign=50&descAlignY=55&fontAlignY=34">
 </p>
 <p align="center">
 	<img src="../sqimp.png" width="150" height="150">
