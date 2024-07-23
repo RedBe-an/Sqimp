@@ -42,3 +42,5 @@ $RECYCLE.BIN/
 *.msp
 
 *.lnk
+
+*.toml
