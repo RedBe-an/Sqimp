@@ -6,6 +6,15 @@
     <br />
     <strong>SQIMP</strong>
 </p>
+<p align="center">
+	<a href="/resources/docs/README_KR.md">
+        <img alt="README-KR" src="https://img.shields.io/badge/KR-white?style=for-the-badge&label=README%20FOR&color=black">
+    </a>
+    &nbsp
+    <a href="/README.md">
+        <img alt="README-EN" src="https://img.shields.io/badge/EN-white?style=for-the-badge&label=README%20FOR&color=black">
+    </a>
+</a>
 
 ## 👀 기능들
 - 사용하기 쉬운 UI

@@ -11,7 +11,7 @@
         <img alt="README-KR" src="https://img.shields.io/badge/KR-white?style=for-the-badge&label=README%20FOR&color=black">
     </a>
     &nbsp
-    <a>
+    <a href="/README.md">
         <img alt="README-EN" src="https://img.shields.io/badge/EN-white?style=for-the-badge&label=README%20FOR&color=black">
     </a>
 </a>
@@ -25,7 +25,7 @@
 - Supports English and Korean
   
 ## ⚠ Warning!
-- This project is currently in development so there is **no** release!
+- This project is currently in development so there is **NO** release!
 
 ## 📜 Information about using this project
 - Sqimp Project is licensed under MIT License, check [LICENSE](https://github.com/RedBe-an/Sqimp/blob/main/LICENSE) for full information.
