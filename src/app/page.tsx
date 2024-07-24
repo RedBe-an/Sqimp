@@ -1,10 +1,15 @@
+import { MenubarDemo } from "@/components/menu-bar";
+import { ModeToggle } from "@/components/mode-toggle";
+import Sidebar from "@/components/sidebar";
 import { Button } from "@/components/ui/button";
-import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <Button>WOW</Button>
-    </main>
+    <>
+      <div className="flex flex-col items-center justify-center">
+        <MenubarDemo />
+        <Sidebar></Sidebar>
+      </div>
+    </>
   );
 }
