@@ -29,3 +29,6 @@
 
 ## 📜 Information about using this project
 - Sqimp Project is licensed under MIT License, check [LICENSE](https://github.com/RedBe-an/Sqimp/blob/main/LICENSE) for full information.
+
+## 24-07-25 GUI Preview
+<img width="749" alt="image" src="https://github.com/user-attachments/assets/f709621a-2039-4c03-8b74-9355383def4e">
