@@ -1,0 +1,27 @@
+{
+    "Windows": {
+      "version": "Windows 10",
+      "memory": "4 GB",
+      "storage": "128 GB SSD",
+      "status": "Running"
+    },
+    "MacOS": {
+      "version": "macOS Big Sur",
+      "memory": "8 GB",
+      "storage": "256 GB SSD",
+      "status": "Stopped"
+    },
+    "Linux": {
+      "version": "Ubuntu 20.04",
+      "memory": "2 GB",
+      "storage": "64 GB SSD",
+      "status": "Paused"
+    },
+    "Linux2": {
+      "version": "Ubuntu 20.04",
+      "memory": "2 GB",
+      "storage": "64 GB SSD",
+      "status": "Paused"
+    }
+  }
+  
