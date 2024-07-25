@@ -860,10 +860,6 @@ video {
 .rounded-sm {
   border-radius: calc(var(--radius) - 4px);
 }
-.rounded-s {
-  border-start-start-radius: 0.25rem;
-  border-end-start-radius: 0.25rem;
-}
 .border {
   border-width: 1px;
 }
@@ -878,9 +874,6 @@ video {
 }
 .border-t {
   border-top-width: 1px;
-}
-.border-r-2 {
-  border-right-width: 2px;
 }
 .border-input {
   border-color: hsl(var(--input));
@@ -1212,20 +1205,8 @@ video {
 }
 
 
-.focus-visible\:ring-0:focus-visible {
-  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
-  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(0px + var(--tw-ring-offset-width)) var(--tw-ring-color);
-  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
-}
-
-
 .focus-visible\:ring-ring:focus-visible {
   --tw-ring-color: hsl(var(--ring));
-}
-
-
-.focus-visible\:ring-transparent:focus-visible {
-  --tw-ring-color: transparent;
 }
 
 

@@ -8,7 +8,7 @@
   },
   "package": {
     "productName": "sqimp",
-    "version": "0.1.0"
+    "version": "0.0.1"
   },
   "tauri": {
     "allowlist": {
@@ -29,7 +29,7 @@
         "icons/icon.icns",
         "icons/icon.ico"
       ],
-      "identifier": "com.tauri.dev",
+      "identifier": "com.sqimp.dev",
       "longDescription": "",
       "macOS": {
         "entitlements": null,
@@ -59,7 +59,7 @@
         "height": 600,
         "resizable": false,
         "title": "Sqimp",
-        "width": 800
+        "width": 1000
       }
     ]
   }
