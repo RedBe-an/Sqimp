@@ -1,12 +1,13 @@
 "use client"
 /* eslint-disable @next/next/no-img-element */
 
-import { useState } from "react";
+import { SVGProps, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { ScrollArea } from "@/components/ui/scroll-area";
-import { JSX, SVGProps } from "react";
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
+import Link from "next/link";
+import VMInfo from "./VMInfo";
 import { ModeToggle } from "../mode-toggle";
-import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "../ui/tooltip";
 
 export default function App() {
   const [selectedVM, setSelectedVM] = useState<string | null>(null);
@@ -47,7 +48,7 @@ function Sidebar({ onSelectVM }: { onSelectVM: (vm: string) => void }) {
             <h3 className="text-lg font-semibold ml-4">VM List</h3>
             <TooltipProvider>
               <Tooltip>
-                <TooltipTrigger>
+                <TooltipTrigger asChild>
                   <Button variant="ghost" size="icon" className="rounded-full">
                     <PlusIcon className="w-5 h-5" />
                   </Button>
@@ -76,84 +77,47 @@ function Sidebar({ onSelectVM }: { onSelectVM: (vm: string) => void }) {
           </ScrollArea>
         </div>
       </div>
-      <div className="flex items-center justify-between px-4 py-5 border-t">
+      <div className="flex items-center justify-between px-4 py-2 border-t">
         <TooltipProvider>
-         <Tooltip>
-           <TooltipTrigger>
-            <ModeToggle />
-           </TooltipTrigger>
-           <TooltipContent>
-             <p>Change Theme</p>
-           </TooltipContent>
-         </Tooltip>
+          <Tooltip>
+            <TooltipTrigger asChild>
+              <div>
+                <ModeToggle />
+              </div>
+            </TooltipTrigger>
+            <TooltipContent>
+              <p>Change Theme</p>
+            </TooltipContent>
+          </Tooltip>
         </TooltipProvider>
         <TooltipProvider>
-         <Tooltip>
-           <TooltipTrigger>
-            <Button variant="ghost" size="icon" className="rounded-full">
-              <SettingsIcon className="w-5 h-5" />
-            </Button>
-           </TooltipTrigger>
-           <TooltipContent>
-             <p>Change Settings</p>
-           </TooltipContent>
-         </Tooltip>
+          <Tooltip>
+            <TooltipTrigger asChild>
+              <Button variant="ghost" size="icon" className="rounded-full">
+                <SettingsIcon className="w-5 h-5" />
+              </Button>
+            </TooltipTrigger>
+            <TooltipContent>
+              <p>Change Settings</p>
+            </TooltipContent>
+          </Tooltip>
         </TooltipProvider>
         <TooltipProvider>
-         <Tooltip>
-           <TooltipTrigger>
-            <Button variant="ghost" size="icon" className="rounded-full">
-              <CircleHelpIcon className="w-5 h-5" />
-            </Button>
-           </TooltipTrigger>
-           <TooltipContent>
-             <p>Check Document</p>
-           </TooltipContent>
-         </Tooltip>
+          <Tooltip>
+            <TooltipTrigger asChild>
+                <Button variant="ghost" size="icon" className="rounded-full" asChild>
+                  <Link href={"https://github.com/RedBe-an/Sqimp"} target="_blank">
+                    <CircleHelpIcon className="w-5 h-5" />
+                  </Link>
+                </Button>
+            </TooltipTrigger>
+            <TooltipContent>
+              <p>Check Document</p>
+            </TooltipContent>
+          </Tooltip>
         </TooltipProvider>
       </div>
     </aside>
-  );
-}
-
-function VMInfo({ vm }: { vm: string }) {
-  const details: Record<string, { version: string; memory: string; storage: string; status: string; }> = {
-    Windows: {
-      version: "Windows 10",
-      memory: "4 GB",
-      storage: "128 GB SSD",
-      status: "Running",
-    },
-    MacOS: {
-      version: "macOS Big Sur",
-      memory: "8 GB",
-      storage: "256 GB SSD",
-      status: "Stopped",
-    },
-    Linux: {
-      version: "Ubuntu 20.04",
-      memory: "2 GB",
-      storage: "64 GB SSD",
-      status: "Paused",
-    },
-  };
-
-  const vmDetails = details[vm];
-
-  if (!vmDetails) {
-    return <div className="text-center">No details available for the selected VM.</div>;
-  }
-
-  return (
-    <div className="text-left ml-6 mt-6">
-      <h1 className="text-3xl font-bold mb-4">{vm} VM Information</h1>
-      <ul className="list-none">
-        <li><strong>Version:</strong> {vmDetails.version}</li>
-        <li><strong>Memory:</strong> {vmDetails.memory}</li>
-        <li><strong>Storage:</strong> {vmDetails.storage}</li>
-        <li><strong>Status:</strong> {vmDetails.status}</li>
-      </ul>
-    </div>
   );
 }
 
